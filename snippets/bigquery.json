@@ -1,0 +1,20 @@
+{
+    "rows": {
+        "prefix": "rows",
+        "body": [
+            "rows between ${1:unbounded preceding} and ${0:unbounded following}",
+        ],
+    },
+    "range": {
+        "prefix": "range",
+        "body": [
+            "range between ${1:unbounded preceding} and ${0:unbounded following}",
+        ],
+    },
+    "between": {
+        "prefix": "b",
+        "body": [
+            "between ${1:minimum} and ${0:maximum}",
+        ],
+    }
+}
