@@ -5,16 +5,15 @@
             "#!/bin/bash",
             "set -euo pipefail",
             "cd $(dirname \\$0)",
-            "$0",
+            "$0"
         ]
     },
-    // https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
     "if ci": {
         "prefix": "if",
         "body": [
             "if [[ -v CI ]]; then",
             "\t$0",
-            "fi",
+            "fi"
         ]
     },
     "if wsl": {
@@ -22,7 +21,7 @@
         "body": [
             "if [[ -v WSL_DISTRO_NAME ]]; then",
             "\t$0",
-            "fi",
+            "fi"
         ]
     },
     "if mac": {
@@ -30,7 +29,7 @@
         "body": [
             "if [ \"\\$(uname)\" == 'Darwin' ]; then",
             "\t$0",
-            "fi",
+            "fi"
         ]
-    },
+    }
 }
