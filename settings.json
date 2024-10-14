@@ -1,39 +1,123 @@
 {
-  // ----- vim -----
-  "vim.useSystemClipboard": true,
-  "vim.showMarksInGutter": true,
-  "vim.leader": "<space>",
+  "[bigquery]": {
+    "editor.tabSize": 2
+  },
+  "[cpp]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[shellscript]": {
+    "editor.tabSize": 2
+  },
+  "[sql]": {
+    "editor.tabSize": 4
+  },
+  "[terraform]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.tabSize": 2
+  },
+  "blender.executables": [
+    {
+      "isDebug": false,
+      "name": "",
+      "path": "/usr/bin/blender"
+    }
+  ],
+  "bqExtensionVSCode.diagnostic.dryRunOnSave": false,
+  "bqExtensionVSCode.formatting.indentCte": false,
+  "bqExtensionVSCode.formatting.printBlankLineAfterCte": true,
+  "bqExtensionVSCode.formatting.printKeywordsInUpperCase": false,
+  "debug.onTaskErrors": "showErrors",
+  "editor.detectIndentation": false,
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "trailing",
+  "editor.suggest.selectionMode": "never",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.eol": "\n",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
+  "go.formatTool": "gofmt",
+  "interactiveWindow.executeWithShiftEnter": true,
+  "julia.enableTelemetry": false,
+  "julia.symbolCacheDownload": true,
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "prettier.trailingComma": "all",
+  "redhat.telemetry.enabled": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "settingsSync.keybindingsPerPlatform": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "'0xProto Nerd Font'",
+  "update.showReleaseNotes": false,
+  "vim.foldfix": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
+      "after": [
+        "<Esc>"
+      ],
       "before": [
         "j",
         "k"
-      ],
-      "after": [
-        "<Esc>"
       ]
     },
     {
-      "before": [
-        "<C-l>"
-      ],
       "after": [
         "<right>"
+      ],
+      "before": [
+        "<C-l>"
       ]
     },
     {
-      "before": [
-        "¥"
-      ],
       "after": [
         "\\"
+      ],
+      "before": [
+        "¥"
       ]
     },
     {
-      "before": [
-        "<C-g>",
-        "<C-u>"
-      ],
       "after": [
         "<esc>",
         "v",
@@ -42,19 +126,14 @@
         "<s-u>",
         "e",
         "a"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "v"
       ],
-      "after": [
-        "<Esc>"
+      "before": [
+        "<C-g>",
+        "<C-u>"
       ]
     }
   ],
+  "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -149,106 +228,17 @@
       ]
     }
   ],
-  "security.allowedUNCHosts": [
-    "wsl.localhost"
-  ],
-  "explorer.confirmDelete": false,
-  "extensions.ignoreRecommendations": true,
-  // ----- git -----
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  // ----- format -----
-  // Default value changed from es5 to all in v3.0.0
-  // https://prettier.io/docs/en/options.html#trailing-commas
-  "prettier.trailingComma": "all",
-  "editor.detectIndentation": false,
-  "files.eol": "\n",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.tabSize": 2
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[bigquery]": {
-    "editor.tabSize": 2
-  },
-  "[sql]": {
-    "editor.tabSize": 4
-  },
-  "[yaml]": {
-    "editor.tabSize": 2
-  },
-  "[terraform]": {
-    "editor.tabSize": 2
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[go]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "never"
-    }
-  },
-  "[cpp]": {
-    "editor.tabSize": 2
-  },
-  "[shellscript]": {
-    "editor.tabSize": 2
-  },
-  // ----- completion -----
-  "editor.suggest.selectionMode": "never",
-  // ----- bigquery -----
-  "bqExtensionVSCode.diagnostic.dryRunOnSave": false,
-  "bqExtensionVSCode.formatting.printBlankLineAfterCte": true,
-  "bqExtensionVSCode.formatting.indentCte": false,
-  // ----- appearance -----
-  "editor.renderWhitespace": "trailing",
-  // ----- other -----
-  // sync between windows and mac
-  "settingsSync.keybindingsPerPlatform": false,
-  "workbench.startupEditor": "none",
-  "git.openRepositoryInParentFolders": "always",
-  "go.formatTool": "gofmt",
-  "terminal.integrated.fontFamily": "'0xProto Nerd Font'",
-  "redhat.telemetry.enabled": true,
-  "bqExtensionVSCode.formatting.printKeywordsInUpperCase": false,
-  "vim.foldfix": true,
-  "blender.executables": [
+  "vim.showMarksInGutter": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "path": "/usr/bin/blender",
-      "name": "",
-      "isDebug": false
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "v"
+      ]
     }
   ],
-  "remote.autoForwardPortsSource": "hybrid",
-  "terminal.integrated.commandsToSkipShell": [
-    "language-julia.interrupt"
-  ],
-  "julia.symbolCacheDownload": true,
-  "jupyter.interactiveWindow.creationMode": "perFile",
-  "editor.lineNumbers": "relative",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "explorer.confirmDragAndDrop": false,
-  "interactiveWindow.executeWithShiftEnter": true,
-  "debug.onTaskErrors": "showErrors",
-  "julia.enableTelemetry": false,
-  "update.showReleaseNotes": false,
+  "workbench.startupEditor": "none"
 }
