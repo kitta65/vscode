@@ -52,6 +52,10 @@
     "command": "-workbench.action.terminal.focusFind"
   },
   {
+    "key": "ctrl+g",
+    "command": "-workbench.action.terminal.goToRecentDirectory"
+  },
+  {
     "key": "ctrl+shift+[BracketLeft]",
     "command": "workbench.action.terminal.new",
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
