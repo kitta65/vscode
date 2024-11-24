@@ -49,13 +49,6 @@
   "[yaml]": {
     "editor.tabSize": 2
   },
-  "blender.executables": [
-    {
-      "isDebug": false,
-      "name": "",
-      "path": "/usr/bin/blender"
-    }
-  ],
   "bqExtensionVSCode.diagnostic.dryRunOnSave": false,
   "bqExtensionVSCode.formatting.indentCte": false,
   "bqExtensionVSCode.formatting.printBlankLineAfterCte": true,
@@ -78,7 +71,6 @@
   "julia.symbolCacheDownload": true,
   "jupyter.interactiveWindow.creationMode": "perFile",
   "prettier.trailingComma": "all",
-  "redhat.telemetry.enabled": true,
   "remote.autoForwardPortsSource": "hybrid",
   "security.allowedUNCHosts": [
     "wsl.localhost"
@@ -87,7 +79,6 @@
   "terminal.integrated.commandsToSkipShell": [
     "language-julia.interrupt"
   ],
-  "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "'0xProto Nerd Font'",
   "update.showReleaseNotes": false,
   "vim.foldfix": true,
