@@ -1,20 +1,30 @@
 {
-    "rows": {
-        "prefix": "rows",
-        "body": [
-            "rows between ${1:unbounded preceding} and ${0:unbounded following}",
-        ],
-    },
-    "range": {
-        "prefix": "range",
-        "body": [
-            "range between ${1:unbounded preceding} and ${0:unbounded following}",
-        ],
-    },
-    "between": {
-        "prefix": "b",
-        "body": [
-            "between ${1:minimum} and ${0:maximum}",
-        ],
-    }
+  "diff": {
+    "prefix": "intersect",
+    "body": [
+      "with",
+      "a as (select * from `${1}`),",
+      "b as (select * from `${0}`)",
+      "select 'a_only' as _status, * from (select * from a except distinct select * from b)",
+      "union all",
+      "select 'b_only' as _status, * from (select * from b except distinct select * from a)",
+      ";"
+    ]
+  },
+  "rows": {
+    "prefix": "rows",
+    "body": [
+      "rows between ${1:unbounded preceding} and ${0:unbounded following}"
+    ]
+  },
+  "range": {
+    "prefix": "range",
+    "body": [
+      "range between ${1:unbounded preceding} and ${0:unbounded following}"
+    ]
+  },
+  "between": {
+    "prefix": "b",
+    "body": ["between ${1:minimum} and ${0:maximum}"]
+  }
 }
