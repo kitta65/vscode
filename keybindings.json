@@ -64,5 +64,11 @@
     "key": "ctrl+shift+[Equal]",
     "command": "-workbench.action.terminal.new",
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  // editor
+  { // to accept copilot's suggestion easily
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible"
   }
 ]
