@@ -1,6 +1,7 @@
 # ignore all files & folders in root
 /*
 
+!.github/
 !.gitignore
 !.vscode/
 !keybindings.json
