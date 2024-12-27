@@ -126,6 +126,14 @@
         "<C-g>",
         "<C-u>"
       ]
+    },
+    {
+      "before": [
+        "<C-i>"
+      ],
+      "commands": [
+        "inlineChat.start"
+      ]
     }
   ],
   "vim.leader": "<space>",
