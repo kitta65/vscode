@@ -13,6 +13,10 @@
       "source.organizeImports": "never"
     }
   },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -79,7 +83,7 @@
   "terminal.integrated.commandsToSkipShell": [
     "language-julia.interrupt"
   ],
-  "terminal.integrated.fontFamily": "'0xProto Nerd Font'",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "update.showReleaseNotes": false,
   "vim.foldfix": true,
   "vim.insertModeKeyBindingsNonRecursive": [
