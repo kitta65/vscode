@@ -30,7 +30,7 @@
     "editor.tabSize": 2
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[shellscript]": {
@@ -76,171 +76,83 @@
   "jupyter.interactiveWindow.creationMode": "perFile",
   "prettier.trailingComma": "all",
   "remote.autoForwardPortsSource": "hybrid",
-  "security.allowedUNCHosts": [
-    "wsl.localhost"
-  ],
+  "security.allowedUNCHosts": ["wsl.localhost"],
   "settingsSync.keybindingsPerPlatform": false,
-  "terminal.integrated.commandsToSkipShell": [
-    "language-julia.interrupt"
-  ],
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "update.showReleaseNotes": false,
   "vim.foldfix": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
-      "after": [
-        "<Esc>"
-      ],
-      "before": [
-        "j",
-        "k"
-      ]
+      "after": ["<Esc>"],
+      "before": ["j", "k"]
     },
     {
-      "after": [
-        "<right>"
-      ],
-      "before": [
-        "<C-l>"
-      ]
+      "after": ["<right>"],
+      "before": ["<C-l>"]
     },
     {
-      "after": [
-        "\\"
-      ],
-      "before": [
-        "¥"
-      ]
+      "after": ["\\"],
+      "before": ["¥"]
     },
     {
-      "after": [
-        "<esc>",
-        "v",
-        "i",
-        "w",
-        "<s-u>",
-        "e",
-        "a"
-      ],
-      "before": [
-        "<C-g>",
-        "<C-u>"
-      ]
+      "after": ["<esc>", "v", "i", "w", "<s-u>", "e", "a"],
+      "before": ["<C-g>", "<C-u>"]
     },
     {
-      "before": [
-        "<C-i>"
-      ],
-      "commands": [
-        "inlineChat.start"
-      ]
+      "before": ["<C-i>"],
+      "commands": ["inlineChat.start"]
     }
   ],
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "]",
-        "b"
-      ],
-      "commands": [
-        ":tabn"
-      ]
+      "before": ["]", "b"],
+      "commands": [":tabn"]
     },
     {
-      "before": [
-        "[",
-        "b"
-      ],
-      "commands": [
-        ":tabp"
-      ]
+      "before": ["[", "b"],
+      "commands": [":tabp"]
     },
     {
-      "before": [
-        "[",
-        "g"
-      ],
-      "commands": [
-        "workbench.action.editor.previousChange"
-      ]
+      "before": ["[", "g"],
+      "commands": ["workbench.action.editor.previousChange"]
     },
     {
-      "before": [
-        "]",
-        "g"
-      ],
-      "commands": [
-        "workbench.action.editor.nextChange"
-      ]
+      "before": ["]", "g"],
+      "commands": ["workbench.action.editor.nextChange"]
     },
     {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.prev"
-      ]
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
     },
     {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
     },
     {
-      "before": [
-        "<leader>",
-        "l",
-        "f"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "<leader>",
-        "l",
-        "h"
-      ],
-      "commands": [
-        "editor.action.showHover"
-      ]
+      "before": ["<leader>", "l", "h"],
+      "commands": ["editor.action.showHover"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
     },
     {
-      "before": [
-        "<leader>",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ]
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
     }
   ],
   "vim.showMarksInGutter": true,
   "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "after": [
-        "<Esc>"
-      ],
-      "before": [
-        "v"
-      ]
+      "after": ["<Esc>"],
+      "before": ["v"]
     }
   ],
   "workbench.startupEditor": "none"
