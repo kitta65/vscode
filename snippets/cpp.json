@@ -1,18 +1,16 @@
 {
-    "init": {
-        "prefix": "init!",
-        "body": [
-            "#include <iostream>",
-            "",
-            "int main() {",
-            "\tstd::cout << \"hello world!\" << std::endl;",
-            "}",
-        ]
-    },
-    "print": {
-        "prefix": "print!",
-        "body": [
-            "std::cout << $0 << std::endl;",
-        ]
-    },
+  "init": {
+    "prefix": "init!",
+    "body": [
+      "#include <iostream>",
+      "",
+      "int main() {",
+      "\tstd::cout << \"hello world!\" << std::endl;",
+      "}"
+    ]
+  },
+  "print": {
+    "prefix": "print!",
+    "body": ["std::cout << $0 << std::endl;"]
+  }
 }
