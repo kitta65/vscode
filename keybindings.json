@@ -1,4 +1,5 @@
 // Place your key bindings in this file to override the defaultsauto[]
+// when clause https://code.visualstudio.com/api/references/when-clause-contexts
 [
   // explorer
   {
@@ -24,6 +25,11 @@
   {
     "key": "a",
     "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "/",
+    "command": "workbench.action.quickOpen",
     "when": "filesExplorerFocus && !inputFocus"
   },
   // quick open
@@ -69,6 +75,6 @@
   { // to accept copilot's suggestion easily
     "key": "tab",
     "command": "editor.action.inlineSuggest.commit",
-    "when": "inlineSuggestionVisible"
+    "when": "inlineSuggestionVisible && !hasSnippetCompletions && !hasNextTabstop"
   }
 ]

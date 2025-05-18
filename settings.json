@@ -50,6 +50,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
   "[yaml]": {
     "editor.tabSize": 2
   },
@@ -66,20 +70,23 @@
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
   "files.eol": "\n",
+  "git.blame.editorDecoration.enabled": false,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "always",
+  "github.copilot.chat.localeOverride": "ja",
   "go.formatTool": "gofmt",
   "interactiveWindow.executeWithShiftEnter": true,
   "julia.enableTelemetry": false,
   "julia.symbolCacheDownload": true,
   "jupyter.interactiveWindow.creationMode": "perFile",
-  "prettier.trailingComma": "all",
   "remote.autoForwardPortsSource": "hybrid",
   "security.allowedUNCHosts": ["wsl.localhost"],
   "settingsSync.keybindingsPerPlatform": false,
   "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
   "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
   "update.showReleaseNotes": false,
   "vim.foldfix": true,
   "vim.insertModeKeyBindingsNonRecursive": [
