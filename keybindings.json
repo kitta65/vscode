@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 // when clause https://code.visualstudio.com/api/references/when-clause-contexts
 [
   // explorer
@@ -76,5 +75,10 @@
     "key": "tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionVisible && !hasSnippetCompletions && !hasNextTabstop"
+  },
+  {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.trigger",
+    "when": "!inlineSuggestionVisible && !hasSnippetCompletions && !hasNextTabstop"
   }
 ]
