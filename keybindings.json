@@ -71,14 +71,10 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   // editor
-  { // to accept copilot's suggestion easily
+  {
+    // to accept copilot's suggestion easily
     "key": "tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionVisible && !hasSnippetCompletions && !hasNextTabstop"
   },
-  {
-    "key": "tab",
-    "command": "editor.action.inlineSuggest.trigger",
-    "when": "!inlineSuggestionVisible && !hasSnippetCompletions && !hasNextTabstop"
-  }
 ]

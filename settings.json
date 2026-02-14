@@ -33,6 +33,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[shellscript]": {
     "editor.tabSize": 2
   },
@@ -62,9 +65,11 @@
   "bqExtensionVSCode.formatting.indentCte": false,
   "bqExtensionVSCode.formatting.printBlankLineAfterCte": true,
   "bqExtensionVSCode.formatting.printKeywordsInUpperCase": false,
+  "claudeCode.preferredLocation": "sidebar",
   "debug.onTaskErrors": "showErrors",
   "editor.detectIndentation": false,
-	"editor.inlineSuggest.enabled": false,
+  "editor.editContext": false, // fix vim behavior
+  "editor.inlineSuggest.edits.showCollapsed": true,
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "trailing",
   "editor.suggest.selectionMode": "never",
